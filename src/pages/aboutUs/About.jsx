@@ -47,7 +47,7 @@ const About = () => {
               <p className="pt-2 font-semibold">- 𝙲𝙴𝙾, Hilful Fuzul IT</p>
             </div>
             <div className="">
-              <img src="https://replicate.delivery/pbxt/IO5YA6embUU9UKfSkevsv4DNicVBh7koAOxrpG4f23dWKFVHB/out.png" loading="lazy" className=" rounded-full w-[20em] h-[20em] md:w-[22em] md:h-[22em] border-[9px] border-blue-500 border-double  hover:scale-105 transition-all" />
+              <img src="https://i.ibb.co/DzK0wzR/cef9ded4-0cd6-4aed-ac2b-a.jpg" loading="lazy" className=" rounded-full w-[20em] h-[20em] md:w-[22em] md:h-[22em] border-[9px] border-blue-500 border-double  hover:scale-105 transition-all" />
               <div>
                 <SectionTitle text={"CEO's Message"} number={""} />
               </div>

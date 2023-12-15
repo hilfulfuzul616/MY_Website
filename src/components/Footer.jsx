@@ -51,7 +51,7 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/company/hilfulfuzulit2023" target="_blank" rel="noopener noreferrer"><div className='cursor-pointer hover:scale-110 transition-all duration-300'><CibLinkedin /></div></a>
                     {/* <div className='cursor-pointer hover:scale-110 transition-all duration-300'><BiYoutube /></div> */}
                     {/* <div className='cursor-pointer hover:scale-110 transition-all duration-300'><RiTwitterXLine /></div> */}
-                    <div className='cursor-pointer hover:scale-110 transition-all duration-300'><BxBxlInstagramAlt /></div>
+                    <a href="https://www.instagram.com/hilfulfuzulit2023" target="_blank" rel="noopener noreferrer"><div className='cursor-pointer hover:scale-110 transition-all duration-300'><BxBxlInstagramAlt /></div></a>
                   </div>
                 </div>
 
@@ -72,7 +72,7 @@ const Footer = () => {
 
               <p className="text-zinc-200 text-center font-semibold  py-3">
                 &copy; {new Date().getFullYear()} copy rights. All right reserved by
-                <span className="font-bold text-yellow-400"> Hilful Fuzul It</span>
+                <span className="font-bold text-yellow-400"> Hilful Fuzul IT</span>
               </p>
             </div>
           ) : (

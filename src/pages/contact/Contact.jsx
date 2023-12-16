@@ -11,30 +11,30 @@ const Contact = () => {
     Swal.fire('Success!', 'Your action was successful!', 'success');
   };
 
-AOS.init();
+  AOS.init();
 
-// You can also pass an optional settings object
-// below listed default settings
-AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: "aos-init", // class applied after initialization
-  animatedClassName: "aos-animate", // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  // You can also pass an optional settings object
+  // below listed default settings
+  AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: "aos-init", // class applied after initialization
+    animatedClassName: "aos-animate", // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 110, // offset (in px) from the original trigger point
-  delay: 200, // values from 0 to 3000, with step 50ms
-  duration: 1200, // values from 0 to 3000, with step 50ms
-  easing: "ease", // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
-});
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 110, // offset (in px) from the original trigger point
+    delay: 200, // values from 0 to 3000, with step 50ms
+    duration: 1200, // values from 0 to 3000, with step 50ms
+    easing: "ease", // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+  });
 
   return (
     <div className="py-10">
@@ -75,7 +75,7 @@ AOS.init({
                 <p className="text-3xl  text-zinc-500 md:text-xl">Send Email</p>
               </a>
               <a
-                href="https://api.whatsapp.com/qr/MCJWLQLWQVOXA1?autoload=1&app_absent=0"
+                href="https://wa.me/01976243616"
                 className="flex cursor-pointer items-center gap-5 flex-col md:flex-row"
               >
                 <p className="text-6xl md:text-2xl text-orange-500 hover:text-orange-600 transition-all">

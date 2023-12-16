@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 import { RiMenu4Fill } from "react-icons/ri";
-import second from "../../assets/less.png";
+// import second from "../../assets/less.png";
 import AOS from "aos";
 AOS.init();
 
@@ -59,185 +59,184 @@ const Navbar = () => {
 
   return (
     <div className="">
-    {data ? (
-      <div className="">
-        {data[0].connection === "ON" ? (
-          <>
-          <nav key="k" className="bg-navBg py-3 sticky top-0 left-0 w-full z-30">
-            <div className="my-container flex justify-between items-center px-2">
-              <div>
-                <img className="md:h-[57px] h-[35px]" src={second} alt="" />
-              </div>
-              <div className="sm:flex items-center gap-3 hidden">
-                <li className="list-none relative group uppercase text-zinc-300 font-semibold hover:text-white">
-                  <NavLink
-                    to={"/"}
-                    onClick={toggleNav}
-                    className={({ isActive }) =>
-                      isActive ? "active dot" : "inActive"
-                    }
-                  >
-                    Home
-                  </NavLink>
-                </li>
-                <li className="list-none relative group uppercase text-zinc-300 font-semibold hover:text-white cursor-pointer">
-                  services
-                  <div className="hidden group-hover:block absolute top-[25px] left-0 bg-white  rounded-md z-10 space-y-2  translate-y-3 transition-all opacity-0 group-hover:translate-y-0 group-hover:opacity-100 drop-shadow-md">
-                  <Link
-                      onClick={toggleNav}
-                      to="/web-development"
-                      className="px-6 last:pb-6 first:pt-5 flex flex-col w-max text-zinc-500 font-medium capitalize hover:text-btnBg"
-                    >
-                      web development
-                    </Link>
-                    
-                    <Link
-                      onClick={toggleNav}
-                      to="/seo"
-                      className="px-6 last:pb-6 first:pt-5 flex flex-col w-max text-zinc-500 font-medium capitalize hover:text-btnBg"
-                    >
-                      seo
-                    </Link>
-                   
-                    <Link
-                      onClick={toggleNav}
-                      to="/graphics-design"
-                      className="px-6 last:pb-6 first:pt-5 flex flex-col w-max text-zinc-500 font-medium capitalize hover:text-btnBg"
-                    >
-                      graphics design
-                    </Link>
-                    <Link
-                      onClick={toggleNav}
-                      to="/digital-marketing"
-                      className="px-6 last:pb-6 first:pt-5 flex flex-col w-max text-zinc-500 font-medium capitalize hover:text-btnBg"
-                    >
-                      digital marketing
-                    </Link>
+      {data ? (
+        <div className="">
+          {data[0].connection === "ON" ? (
+            <>
+              <nav key="k" className="bg-navBg py-3 sticky top-0 left-0 w-full z-30">
+                <div className="my-container flex justify-between items-center px-2">
+                  <div>
+                    <img className="md:h-[57px] h-[35px]" src="https://i.ibb.co/ypMp7cZ/a4750557-0218-4c90-813d-cbc2821a90d2-removebg-preview-1.png" alt="" />
                   </div>
-                </li>
-    
-                <li className="list-none relative group uppercase text-zinc-300 font-semibold hover:text-white">
-                  <NavLink
-                    to={"/about-us"}
+                  <div className="sm:flex items-center gap-3 hidden">
+                    <li className="list-none relative group uppercase text-zinc-300 font-semibold hover:text-white">
+                      <NavLink
+                        to={"/"}
+                        onClick={toggleNav}
+                        className={({ isActive }) =>
+                          isActive ? "active dot" : "inActive"
+                        }
+                      >
+                        Home
+                      </NavLink>
+                    </li>
+                    <li className="list-none relative group uppercase text-zinc-300 font-semibold hover:text-white cursor-pointer">
+                      services
+                      <div className="hidden group-hover:block absolute top-[25px] left-0 bg-white  rounded-md z-10 space-y-2  translate-y-3 transition-all opacity-0 group-hover:translate-y-0 group-hover:opacity-100 drop-shadow-md">
+                        <Link
+                          onClick={toggleNav}
+                          to="/web-development"
+                          className="px-6 last:pb-6 first:pt-5 flex flex-col w-max text-zinc-500 font-medium capitalize hover:text-btnBg"
+                        >
+                          web development
+                        </Link>
+
+                        <Link
+                          onClick={toggleNav}
+                          to="/seo"
+                          className="px-6 last:pb-6 first:pt-5 flex flex-col w-max text-zinc-500 font-medium capitalize hover:text-btnBg"
+                        >
+                          SEO
+                        </Link>
+
+                        <Link
+                          onClick={toggleNav}
+                          to="/graphics-design"
+                          className="px-6 last:pb-6 first:pt-5 flex flex-col w-max text-zinc-500 font-medium capitalize hover:text-btnBg"
+                        >
+                          graphics design
+                        </Link>
+                        <Link
+                          onClick={toggleNav}
+                          to="/digital-marketing"
+                          className="px-6 last:pb-6 first:pt-5 flex flex-col w-max text-zinc-500 font-medium capitalize hover:text-btnBg"
+                        >
+                          digital marketing
+                        </Link>
+                      </div>
+                    </li>
+
+                    <li className="list-none relative group uppercase text-zinc-300 font-semibold hover:text-white">
+                      <NavLink
+                        to={"/about-us"}
+                        onClick={toggleNav}
+                        className={({ isActive }) =>
+                          isActive ? "active dot" : "inActive"
+                        }
+                      >
+                        about us
+                      </NavLink>
+                    </li>
+
+                    <li className="list-none relative group uppercase text-zinc-300 font-semibold hover:text-white">
+                      <NavLink
+                        to={"/contact-us"}
+                        onClick={toggleNav}
+                        className={({ isActive }) =>
+                          isActive ? "active dot" : "inActive"
+                        }
+                      >
+                        contact us
+                      </NavLink>
+                    </li>
+                  </div>
+
+                  <p
+                    className="text-white sm:hidden text-2xl cursor-pointer"
                     onClick={toggleNav}
-                    className={({ isActive }) =>
-                      isActive ? "active dot" : "inActive"
-                    }
                   >
-                    about us
-                  </NavLink>
-                </li>
-    
-                <li className="list-none relative group uppercase text-zinc-300 font-semibold hover:text-white">
-                  <NavLink
-                    to={"/contact-us"}
-                    onClick={toggleNav}
-                    className={({ isActive }) =>
-                      isActive ? "active dot" : "inActive"
-                    }
-                  >
-                    contact us
-                  </NavLink>
-                </li>
-              </div>
-    
-              <p
-                className="text-white sm:hidden text-2xl cursor-pointer"
-                onClick={toggleNav}
-              >
-                <RiMenu4Fill />
-              </p>
-            </div>
-          </nav>
-    
-          {/* MOBILE MENU  */}
-    
-          <div
-            className={`block sm:hidden bg-black/90 fixed z-50 top-0 right-0 max-w-screen-sm w-full pb-4 text-center h-screen space-y-3  transition-all backdrop-blur-md ${
-              showNav ? "translate-x-0" : "translate-x-[120%]"
-            }`}
-          >
-            <span
-              className="absolute top-4 right-4 text-white text-2xl w-8 h-8 bg-rose-500 rounded-full grid place-content-center cursor-pointer"
-              onClick={toggleNav}
-            >
-              <MdClose className="p-1 font-semibold" />
-            </span>
-            <div className="pt-[5rem] space-y-3"> {/* Submenu */}
-              <li className="list-none relative group w-max mx-auto">
-                <NavLink
-                  onClick={toggleNav}
-                  to={"/"}
-                  className="uppercase text-zinc-100 font-semibold hover:text-white"
-                >
-                  home
-                </NavLink>
-              </li>
-    
-              <li className="list-none relative group w-max mx-auto cursor-pointer text-zinc-50 font-semibold text-lg">
-                services
-                <div className="absolute top-3 -right-[8rem] bg-navBg border border-zinc-700 rounded-md z-10 space-y-3  translate-y-3 transition-all hidden group-hover:block drop-shadow-md py-4 px-2 ">
-                <Link
-                    to={"/web-development"}
-                    onClick={toggleNav}
-                    className="text-sm px-3 flex flex-col w-max text-zinc-50 transition-all font-medium capitalize hover:text-btnBg "
-                  >
-                    web development
-                  </Link>
-                  <Link
-                    to={"/seo"}
-                    onClick={toggleNav}
-                    className="text-sm px-3 flex flex-col w-max text-zinc-50 transition-all font-medium capitalize hover:text-btnBg "
-                  >
-                    seo
-                  </Link>
-                  <Link
-                    to={"/graphics-design"}
-                    onClick={toggleNav}
-                    className="text-sm px-3 flex flex-col w-max text-zinc-50 transition-all font-medium capitalize hover:text-btnBg "
-                  >
-                    graphics design
-                  </Link>
-                  <Link
-                    to={"/digital-marketing"}
-                    onClick={toggleNav}
-                    className="text-sm px-3 flex flex-col w-max text-zinc-50 transition-all font-medium capitalize hover:text-btnBg "
-                  >
-                    digital marketing
-                  </Link>
+                    <RiMenu4Fill />
+                  </p>
                 </div>
-              </li>
-    
-              <li className="list-none relative group w-max mx-auto">
-                <NavLink
+              </nav>
+
+              {/* MOBILE MENU  */}
+
+              <div
+                className={`block sm:hidden bg-black/90 fixed z-50 top-0 right-0 max-w-screen-sm w-full pb-4 text-center h-screen space-y-3  transition-all backdrop-blur-md ${showNav ? "translate-x-0" : "translate-x-[120%]"
+                  }`}
+              >
+                <span
+                  className="absolute top-4 right-4 text-white text-2xl w-8 h-8 bg-rose-500 rounded-full grid place-content-center cursor-pointer"
                   onClick={toggleNav}
-                  to={"/about-us"}
-                  className="uppercase text-zinc-100 font-semibold hover:text-white"
                 >
-                  about us
-                </NavLink>
-              </li>
-    
-              <li className="list-none relative group w-max mx-auto">
-                <NavLink
-                  onClick={toggleNav}
-                  to={"/contact-us"}
-                  className="uppercase text-zinc-100 font-semibold hover:text-white"
-                >
-                  contact us
-                </NavLink>
-              </li>
-            </div>
-          </div>
-        </>
-        ) : (
-          <div key="l" className="hidden"></div>
-        )}
-      </div>
-    ) : (
-      <p></p>
-    )}
-  </div>
+                  <MdClose className="p-1 font-semibold" />
+                </span>
+                <div className="pt-[5rem] space-y-3"> {/* Submenu */}
+                  <li className="list-none relative group w-max mx-auto">
+                    <NavLink
+                      onClick={toggleNav}
+                      to={"/"}
+                      className="uppercase text-zinc-100 font-semibold hover:text-white"
+                    >
+                      home
+                    </NavLink>
+                  </li>
+
+                  <li className="list-none relative group w-max mx-auto cursor-pointer text-zinc-50 font-semibold text-lg">
+                    services
+                    <div className="absolute top-3 -right-[8rem] bg-navBg border border-zinc-700 rounded-md z-10 space-y-3  translate-y-3 transition-all hidden group-hover:block drop-shadow-md py-4 px-2 ">
+                      <Link
+                        to={"/web-development"}
+                        onClick={toggleNav}
+                        className="text-sm px-3 flex flex-col w-max text-zinc-50 transition-all font-medium capitalize hover:text-btnBg "
+                      >
+                        web development
+                      </Link>
+                      <Link
+                        to={"/seo"}
+                        onClick={toggleNav}
+                        className="text-sm px-3 flex flex-col w-max text-zinc-50 transition-all font-medium capitalize hover:text-btnBg "
+                      >
+                        seo
+                      </Link>
+                      <Link
+                        to={"/graphics-design"}
+                        onClick={toggleNav}
+                        className="text-sm px-3 flex flex-col w-max text-zinc-50 transition-all font-medium capitalize hover:text-btnBg "
+                      >
+                        graphics design
+                      </Link>
+                      <Link
+                        to={"/digital-marketing"}
+                        onClick={toggleNav}
+                        className="text-sm px-3 flex flex-col w-max text-zinc-50 transition-all font-medium capitalize hover:text-btnBg "
+                      >
+                        digital marketing
+                      </Link>
+                    </div>
+                  </li>
+
+                  <li className="list-none relative group w-max mx-auto">
+                    <NavLink
+                      onClick={toggleNav}
+                      to={"/about-us"}
+                      className="uppercase text-zinc-100 font-semibold hover:text-white"
+                    >
+                      about us
+                    </NavLink>
+                  </li>
+
+                  <li className="list-none relative group w-max mx-auto">
+                    <NavLink
+                      onClick={toggleNav}
+                      to={"/contact-us"}
+                      className="uppercase text-zinc-100 font-semibold hover:text-white"
+                    >
+                      contact us
+                    </NavLink>
+                  </li>
+                </div>
+              </div>
+            </>
+          ) : (
+            <div key="l" className="hidden"></div>
+          )}
+        </div>
+      ) : (
+        <p></p>
+      )}
+    </div>
   );
 };
 
